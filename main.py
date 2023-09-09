@@ -10,8 +10,8 @@ def get_info():
     track= request.args.get("track")
     day_of_the_week= dt.datetime.today().strftime("%A")
     utc_now = dt.datetime.now(pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    github_file_url = "https://github.com/username/repo/blob/main/file_name.ext"
-    source_code_url = "https://github.com/your_username/your_repo"
+    github_file_url = "https://github.com/hallegatia/hng_endpoint/blob/master/main.py"
+    source_code_url = "https://github.com/hallegatia/hng_endpoint"
 
     response ={
         "slack_name": slack_name,
