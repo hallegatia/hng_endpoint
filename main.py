@@ -5,7 +5,7 @@ import pytz
 app= Flask(__name__)
 
 @app.route("/get-info", methods =["GET"])
-def get_info():
+def api():
     slack_name= request.args.get("slack_name")
     track= request.args.get("track")
     day_of_the_week= dt.datetime.today().strftime("%A")
